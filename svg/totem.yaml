@@ -1,0 +1,213 @@
+layout: {zmk_keyboard: totem}
+layers:
+  colemak:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', s: '"'}
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-command$$'}
+  - G
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
+  - ''
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - '-'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: sym, h: '[sticky]'}
+  - {t: nav, h: '[sticky]'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '[sticky]', s: '$$mdi:alpha-w-box$$'}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
+  - $$mdi:backspace-reverse-outline$$
+  sym:
+  - ^
+  - '`'
+  - '|'
+  - '*'
+  - '&'
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - {t: '@', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: $, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '%', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
+  - '~'
+  - ''
+  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '0'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {type: held}
+  - nav
+  - ''
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
+  - $$mdi:backspace-reverse-outline$$
+  nav:
+  - $$mdi:keyboard-esc$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - PgUp
+  - Home
+  - {t: '$$mdi:arrow-up-bold$$', h: Ctl+Home}
+  - End
+  - $$mdi:keyboard-tab$$
+  - {t: ^A, h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-control$$
+  - {t: ^S, h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-command$$
+  - ''
+  - PgDn
+  - {t: '$$mdi:arrow-left-bold$$', h: Home}
+  - {t: '$$mdi:arrow-down-bold$$', h: Ctl+End}
+  - {t: '$$mdi:arrow-right-bold$$', h: End}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - ''
+  - ^Z
+  - ^X
+  - ^C
+  - ''
+  - ^V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - sym
+  - {type: held}
+  - ''
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
+  - $$mdi:backspace-reverse-outline$$
+  fn:
+  - {t: '$$mdi:bluetooth-connect$$', h: '0'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '1'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '2'}
+  - {t: '$$mdi:bluetooth-connect$$', h: '3'}
+  - OUT TOG
+  - ''
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: '$$mdi:volume-low$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:volume-off$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:volume-high$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:brightness-7$$', h: '$$mdi:apple-keyboard-command$$'}
+  - $$mdi:brightness-5$$
+  - ''
+  - {t: F4, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F11, h: '$$mdi:apple-keyboard-shift$$'}
+  - ''
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - Zoom-
+  - Zoom+
+  - ''
+  - F1
+  - F2
+  - F3
+  - F12
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {type: held}
+  - {type: held}
+  - ''
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
+  - $$mdi:backspace-reverse-outline$$
+combos:
+- p: [0, 10]
+  k: /
+  l: [colemak]
+- p: [1, 11]
+  k: <
+  l: [colemak]
+- p: [2, 12]
+  k: '['
+  l: [colemak]
+- p: [3, 13]
+  k: (
+  l: [colemak]
+- p: [4, 14]
+  k: '{'
+  l: [colemak]
+- p: [5, 15]
+  k: '}'
+  l: [colemak]
+- p: [6, 16]
+  k: )
+  l: [colemak]
+- p: [7, 17]
+  k: ']'
+  l: [colemak]
+- p: [8, 18]
+  k: '>'
+  l: [colemak]
+- p: [9, 19]
+  k: \
+  l: [colemak]
+- p: [11, 22]
+  k: '!'
+  l: [colemak]
+- p: [12, 23]
+  k: '?'
+  l: [colemak]
+- p: [13, 24]
+  k: '='
+  l: [colemak]
+- p: [14, 25]
+  k: +
+  l: [colemak]
+- p: [16, 27]
+  k: Ö
+  l: [colemak]
+- p: [17, 28]
+  k: Å
+  l: [colemak]
+- p: [18, 29]
+  k: Ä
+  l: [colemak]
+- p: [2, 3]
+  k: $$mdi:bluetooth-off$$
+  l: [fn]
