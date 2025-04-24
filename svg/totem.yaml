@@ -54,7 +54,7 @@ layers:
   - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
   - {t: $, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
-  - '~'
+  - ''
   - ''
   - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
@@ -201,6 +201,9 @@ combos:
   l: [colemak]
 - p: [14, 25]
   k: +
+  l: [colemak]
+- p: [15, 26]
+  k: '~'
   l: [colemak]
 - p: [16, 27]
   k: Ö

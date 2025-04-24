@@ -548,14 +548,18 @@ path {
 <text x="330" y="149" class="combo tap">+</text>
 </g>
 <g class="combo combopos-15">
+<rect rx="6" ry="6" x="510" y="139" width="20" height="20" class="combo"/>
+<text x="520" y="149" class="combo tap">~</text>
+</g>
+<g class="combo combopos-16">
 <rect rx="6" ry="6" x="570" y="130" width="20" height="20" class="combo"/>
 <text x="580" y="140" class="combo tap">Ö</text>
 </g>
-<g class="combo combopos-16">
+<g class="combo combopos-17">
 <rect rx="6" ry="6" x="629" y="102" width="20" height="20" class="combo"/>
 <text x="639" y="112" class="combo tap">Å</text>
 </g>
-<g class="combo combopos-17">
+<g class="combo combopos-18">
 <rect rx="6" ry="6" x="691" y="136" width="20" height="20" class="combo"/>
 <text x="701" y="146" class="combo tap">Ä</text>
 </g>
@@ -623,7 +627,6 @@ path {
 </g>
 <g transform="translate(330, 121)" class="key keypos-14">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">~</text>
 </g>
 <g transform="translate(520, 121)" class="key keypos-15">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
