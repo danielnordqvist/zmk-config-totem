@@ -31,6 +31,7 @@
 #define M_PASTE LG(V)
 #define M_ALL LG(A)
 #define M_SAVE LG(S)
+#define M_NEW LG(N)
 
 #define ZOOM_IN  LG(PLUS)
 #define ZOOM_OUT LG(MINUS)
@@ -79,7 +80,7 @@ ZMK_COMBO(combo_QMARK,   &kp SV_QMARK,    LM2 LB2, COLEMAK, COMBO_TERM_SLOW, COM
 ZMK_COMBO(combo_EQUAL,   &kp SV_EQUAL,    LM1 LB1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // =
 ZMK_COMBO(combo_PLUS,    &kp SV_PLUS,     LM0 LB0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // +
 
-ZMK_COMBO(combo_TILDE,   &macro_tilde,    RM0 RB0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Ö
+//ZMK_COMBO(combo_TILDE,   &macro_tilde,    RM0 RB0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Ö
 ZMK_COMBO(combo_oe,      &kp SV_O_UMLAUT, RM1 RB1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Ö
 ZMK_COMBO(combo_ao,      &kp SV_A_RING,   RM2 RB2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Å
 ZMK_COMBO(combo_ae,      &kp SV_A_UMLAUT, RM3 RB3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Ä
@@ -198,6 +199,18 @@ ZMK_MACRO(macro_caret,
     bindings = <&kp SV_CARET &kp SPACE>;
 )
 
+ZMK_MACRO(macro_dir_up,
+    wait-ms = <30>;
+    tap-ms = <40>;
+    bindings = <&kp SV_DOT &kp SV_DOT &kp SV_FSLH>;
+)
+
+ZMK_MACRO(macro_dir_home,
+    wait-ms = <30>;
+    tap-ms = <40>;
+    bindings = <&kp SV_TILDE &kp SV_FSLH>;
+)
+
 /* Unicode */
 ZMK_UNICODE_SINGLE(currsign, N0, N0, A, N4)
 
@@ -226,11 +239,11 @@ ZMK_LAYER(colemak,
 
 ZMK_LAYER(sym,
 //                   ╭──────────────────┬────────────────────┬─────────────────┬────────────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                        &macro_caret         &macro_grave        &kp SV_AMPS        &kp SV_PRCNT         &none            &none         &kp N7        &kp N8        &kp N9        &none
+                        &macro_caret         &macro_grave        &kp SV_AMPS        &kp SV_PRCNT     &macro_dir_up        &none         &kp N7        &kp N8        &kp N9        &none
 //                   ├──────────────────┼────────────────────┼─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-                       &hml LSHFT SV_AT  &hml LCTRL SV_STAR   &hml LALT SV_DLLR  &hml LGUI SV_HASH       &none            &none      &hmr RGUI N4  &hmr RALT N5  &hmr RCTRL N6    &kp N0
+                       &hml LSHFT SV_AT  &hml LCTRL SV_STAR   &hml LALT SV_DLLR  &hml LGUI SV_HASH  &macro_dir_home       &none      &hmr RGUI N4  &hmr RALT N5  &hmr RCTRL N6    &kp N0
 //╭──────────────────┴──────────────────┼────────────────────┼─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮ 
-       &kp ESC             &none               &none               &none              &none              &none            &none         &kp N1        &kp N2        &kp N3        &none         &kp RET
+       &kp ESC             &none               &none               &none           &macro_tilde          &none            &none         &kp N1        &kp N2        &kp N3        &none         &kp RET
 //╰──────────────────┴──────────────────┴────────────────────┴─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
                                                                    &none             &mo NAV             &none            &kp SPACE     NAV_BSPC      &kp TAB
 //                                                           ╰─────────────────┴────────────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
@@ -238,13 +251,13 @@ ZMK_LAYER(sym,
 
 ZMK_LAYER(nav,
 //              ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                   &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP     &kp C_PP       &none             &none       &kp HOME       NAV_UP       &kp END       &kp PG_UP
+                     &none         &none       &kp M_FIND     &kp M_NEW      &none             &none       &kp HOME       NAV_UP       &kp END       &kp PG_UP
 //              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
                 &hml LSHFT M_ALL &kp LCTRL  &hml LALT M_SAVE  &kp LGUI       &none             &none       NAV_LEFT      NAV_DOWN      NAV_RIGHT     &kp PG_DN
 //╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮ 
-      &kp ESC      &kp M_UNDO    &kp M_CUT    &kp M_COPY      &none       &kp M_PASTE          &none         &none         &none         &none         &none        &kp RET
+      &kp ESC      &kp M_UNDO    &kp M_CUT    &kp M_COPY       &none      &kp M_PASTE          &none         &none         &none         &none         &none        &kp RET
 //╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &mo SYMNUM     &none          &none           &kp SPACE      NAV_BSPC      &kp TAB 
+                                               &mo SYMNUM      &none         &none           &kp SPACE      NAV_BSPC      &kp TAB 
 //                                          ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
 )
 
@@ -252,9 +265,9 @@ ZMK_LAYER(fn,
 //                     ╭────────────────────┬──────────────────┬───────────────────┬─────────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬──────────────┬───────────────╮
                            &bt BT_SEL 0         &bt BT_SEL 1       &bt BT_SEL 2        &bt BT_SEL 3    &out OUT_TOG         &none        &kp F7        &kp F8        &kp F9         &kp F10
 //                     ├────────────────────┼──────────────────┼───────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼──────────────┼───────────────┤ 
-                          &hml LSHFT C_PREV  &hml LCTRL C_NEXT  &hml LALT ZOOM_OUT  &hml LGUI ZOOM_IN     &none             &none        &kp F4        &kp F5        &kp F6         &kp F11
+                          &hml LSHFT C_MUTE  &hml LCTRL C_VOL_DN &hml LALT C_VOL_UP   &hml LGUI C_PP      &none             &none        &kp F4        &kp F5        &kp F6         &kp F11
 //╭────────────────────┼────────────────────┼──────────────────┼───────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼──────────────┼───────────────┼───────────────╮ 
-           &kp ESC            &none                &none           &kp BRI_DN          &kp BRI_UP         &none             &none        &kp F1        &kp F2        &kp F3         &kp F12          &kp RET
+           &kp ESC            &kp BRI_DN         &kp BRI_UP         &kp C_PREV          &kp C_NEXT        &none             &none        &kp F1        &kp F2        &kp F3         &kp F12          &kp RET
 //╰────────────────────┴────────────────────┴──────────────────┴───────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼──────────────┴───────────────┴───────────────╯
                                                                       &none               &none           &none           &kp SPACE      NAV_BSPC      &kp TAB
 //                                                             ╰───────────────────┴─────────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
