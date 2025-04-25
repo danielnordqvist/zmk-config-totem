@@ -291,15 +291,12 @@ parse_config:
     '&gresc': 'Esc'
     '&td_caps': $$mdi:alpha-w-box$$
     '&reset': 'Reset'
-    '&m_undo': '^-Z'
-    '&m_cut': '^-X'
-    '&m_copy': '^-C'
-    '&m_paste': '^-V'
 
     '&macro_tilde': '~'
     '&macro_grave': '`'
     '&macro_caret': '^'
-    'macro_tilde': '~'
+    '&macro_dir_up': '../'
+    '&macro_dir_home': '~/'
 
     "&caps_word": $$mdi:alpha-w-box$$
     "&td_sftcap":
@@ -317,14 +314,15 @@ parse_config:
 
     '&slh_bslh': { t: '/', s: '\' }
 
-    '&kp LG(Z)': '^Z'
-    '&kp LG(C)': '^C'
-    '&kp LG(V)': '^V'
-    '&kp LG(X)': '^X'
+    '&kp LG(Z)': $$mdi:undo$$
+    '&kp LG(C)': $$mdi:content-copy$$
+    '&kp LG(V)': $$mdi:content-paste$$
+    '&kp LG(X)': $$mdi:content-cut$$
 
-    '&kp LG(F)': '^F'
-    '&kp LG(A)': '^A'
-    '&kp LG(S)': '^S'
+    '&kp LG(F)': $$mdi:file-find-outline$$
+    '&kp LG(A)': $$mdi:select-all$$
+    '&kp LG(S)': $$mdi:content-save-outline$$
+    '&kp LG(N)': $$mdi:open-in-new$$
 
     '&kp LS(TAB)': $$mdi:keyboard-tab-reverse$$
 
@@ -415,18 +413,16 @@ parse_config:
     # Settings
     C_BRI_UP: $$mdi:brightness-5$$
     C_BRI_DN: $$mdi:brightness-7$$
-    #LC(C_BRI_UP): $$mdi:brightness-5$$
-    #LC(C_BRI_DN): $$mdi:brightness-7$$
 
     # System
     C_POWER: $$mdi:power-standby$$
     C_AL_LOCK: $$mdi:lock$$
     K_CANCEL: $$mdi:close-box$$
 
-    PG_UP: "PgUp"
-    PG_DN: "PgDn"
-    HOME: "Home"
-    END: "End"
+    PG_UP: $$mdi:chevron-double-up$$
+    PG_DN: $$mdi:chevron-double-down$$
+    HOME: $$mdi:chevron-double-left$$
+    END: $$mdi:chevron-double-right$$
 
     AMPERSAND: '&'
     AMPS: '&'
