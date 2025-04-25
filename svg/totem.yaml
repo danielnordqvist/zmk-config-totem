@@ -83,7 +83,7 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
+  - ''
   - ''
   - Home
   - {t: '$$mdi:arrow-up-bold$$', h: Ctl+Home}
@@ -128,22 +128,22 @@ layers:
   - F8
   - F9
   - F10
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:brightness-7$$', h: '$$mdi:apple-keyboard-command$$'}
-  - $$mdi:brightness-5$$
+  - {t: '$$mdi:skip-previous$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:skip-next$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Zoom-, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: Zoom+, h: '$$mdi:apple-keyboard-command$$'}
+  - ''
   - ''
   - F4
   - F5
   - F6
   - F11
   - $$mdi:keyboard-esc$$
-  - $$mdi:skip-previous$$
-  - $$mdi:play-pause$$
-  - $$mdi:skip-next$$
-  - Zoom-
-  - Zoom+
+  - ''
+  - ''
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
+  - ''
   - ''
   - F1
   - F2
