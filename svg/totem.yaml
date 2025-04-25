@@ -44,7 +44,7 @@ layers:
   - '`'
   - '&'
   - '%'
-  - ''
+  - '&macro_dir_up'
   - ''
   - '7'
   - '8'
@@ -54,7 +54,7 @@ layers:
   - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
   - {t: $, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
-  - ''
+  - '&macro_dir_home'
   - ''
   - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
@@ -64,7 +64,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '~'
   - ''
   - ''
   - '1'
@@ -79,10 +79,10 @@ layers:
   - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
   - $$mdi:keyboard-tab$$
   nav:
-  - $$mdi:volume-off$$
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - $$mdi:play-pause$$
+  - ''
+  - ''
+  - ^F
+  - Gui+N
   - ''
   - ''
   - Home
@@ -128,10 +128,10 @@ layers:
   - F8
   - F9
   - F10
-  - {t: '$$mdi:skip-previous$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:skip-next$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: Zoom-, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: Zoom+, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:volume-off$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:volume-low$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:volume-high$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:play-pause$$', h: '$$mdi:apple-keyboard-command$$'}
   - ''
   - ''
   - F4
@@ -139,10 +139,10 @@ layers:
   - F6
   - F11
   - $$mdi:keyboard-esc$$
-  - ''
-  - ''
   - $$mdi:brightness-7$$
   - $$mdi:brightness-5$$
+  - $$mdi:skip-previous$$
+  - $$mdi:skip-next$$
   - ''
   - ''
   - F1
@@ -201,9 +201,6 @@ combos:
   l: [colemak]
 - p: [14, 25]
   k: +
-  l: [colemak]
-- p: [15, 26]
-  k: '~'
   l: [colemak]
 - p: [16, 27]
   k: Ö
