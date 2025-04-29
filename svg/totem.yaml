@@ -32,13 +32,13 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - '-'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: fn}
   - {t: sym, h: '[sticky]'}
   - {t: nav, h: '[sticky]'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '[sticky]', s: '$$mdi:alpha-w-box$$'}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   sym:
   - ^
   - '`'
@@ -72,12 +72,12 @@ layers:
   - '3'
   - ''
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
+  - {t: '$$mdi:close-box$$', type: held}
   - nav
   - ''
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   nav:
   - ''
   - ''
@@ -112,11 +112,11 @@ layers:
   - ''
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - sym
-  - {type: held}
+  - {t: '$$mdi:close-box$$', type: held}
   - ''
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   fn:
   - {t: '$$mdi:bluetooth-connect$$', h: '0'}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
@@ -149,13 +149,13 @@ layers:
   - F2
   - F3
   - F12
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
-  - {type: held}
+  - {t: '$$mdi:keyboard-return$$', type: held}
   - ''
-  - $$mdi:keyboard-space$$
+  - ''
+  - ''
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
 combos:
 - p: [0, 10]
   k: /
