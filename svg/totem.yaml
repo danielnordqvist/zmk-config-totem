@@ -44,7 +44,7 @@ layers:
   - '`'
   - '&'
   - '%'
-  - '&macro_dir_up'
+  - ../
   - ''
   - '7'
   - '8'
@@ -54,7 +54,7 @@ layers:
   - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
   - {t: $, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
-  - '&macro_dir_home'
+  - ~/
   - ''
   - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
@@ -81,30 +81,30 @@ layers:
   nav:
   - ''
   - ''
-  - ^F
-  - Gui+N
+  - $$mdi:file-find-outline$$
+  - $$mdi:open-in-new$$
   - ''
   - ''
-  - Home
-  - {t: '$$mdi:arrow-up-bold$$', h: Ctl+Home}
-  - End
-  - PgUp
-  - {t: ^A, h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:chevron-double-left$$
+  - {t: '$$mdi:arrow-up-bold$$', h: 'Ctl+$$mdi:chevron-double-left$$'}
+  - $$mdi:chevron-double-right$$
+  - $$mdi:chevron-double-up$$
+  - {t: '$$mdi:select-all$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
-  - {t: ^S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:content-save-outline$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-command$$
   - ''
   - ''
-  - {t: '$$mdi:arrow-left-bold$$', h: Home}
-  - {t: '$$mdi:arrow-down-bold$$', h: Ctl+End}
-  - {t: '$$mdi:arrow-right-bold$$', h: End}
-  - PgDn
+  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:chevron-double-left$$'}
+  - {t: '$$mdi:arrow-down-bold$$', h: 'Ctl+$$mdi:chevron-double-right$$'}
+  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:chevron-double-right$$'}
+  - $$mdi:chevron-double-down$$
   - $$mdi:keyboard-esc$$
-  - ^Z
-  - ^X
-  - ^C
+  - $$mdi:undo$$
+  - $$mdi:content-cut$$
+  - $$mdi:content-copy$$
   - ''
-  - ^V
+  - $$mdi:content-paste$$
   - ''
   - ''
   - ''
