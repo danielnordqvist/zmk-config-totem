@@ -42,9 +42,11 @@
 
 #define MEH LCTRL(LALT(LSHFT))
 
+#define CANCEL  &kp K_CANCEL  // Cancel caps-word & auto-layers.
+
 /* Combos */
 #define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 30
+#define COMBO_TERM_SLOW 50
 
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
@@ -62,23 +64,23 @@
             ╰────────────┴────────────╯                        ╰──────────────┴─────────────╯
 */
 
-ZMK_COMBO(combo_FSLH,    &kp SV_FSLH,     LT4 LM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // /
-ZMK_COMBO(combo_SV_LT,   &kp SV_LT,       LT3 LM3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // <
-ZMK_COMBO(combo_SV_LBKT, &kp SV_LBKT,     LT2 LM2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // [
-ZMK_COMBO(combo_SV_LPAR, &kp SV_LPAR,     LT1 LM1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // (
-ZMK_COMBO(combo_SV_LBRC, &kp SV_LBRC,     LT0 LM0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // {
+ZMK_COMBO(combo_FSLH,    &kp SV_FSLH,     LT4 LM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // /
+ZMK_COMBO(combo_SV_LT,   &kp SV_LT,       LT3 LM3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // <
+ZMK_COMBO(combo_SV_LBKT, &kp SV_LBKT,     LT2 LM2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // [
+ZMK_COMBO(combo_SV_LPAR, &kp SV_LPAR,     LT1 LM1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // (
+ZMK_COMBO(combo_SV_LBRC, &kp SV_LBRC,     LT0 LM0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // {
 
-ZMK_COMBO(combo_SV_RBRC, &kp SV_RBRC,     RT0 RM0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // }
-ZMK_COMBO(combo_SV_RPAR, &kp SV_RPAR,     RT1 RM1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // )
-ZMK_COMBO(combo_SV_RBKT, &kp SV_RBKT,     RT2 RM2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // ]
-ZMK_COMBO(combo_SV_GT,   &kp SV_GT,       RT3 RM3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // >
-ZMK_COMBO(combo_BSLH,    &kp SV_BSLH,     RT4 RM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // \
+ZMK_COMBO(combo_SV_RBRC, &kp SV_RBRC,     RT0 RM0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // }
+ZMK_COMBO(combo_SV_RPAR, &kp SV_RPAR,     RT1 RM1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // )
+ZMK_COMBO(combo_SV_RBKT, &kp SV_RBKT,     RT2 RM2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // ]
+ZMK_COMBO(combo_SV_GT,   &kp SV_GT,       RT3 RM3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // >
+ZMK_COMBO(combo_BSLH,    &kp SV_BSLH,     RT4 RM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // \
 
-ZMK_COMBO(combo_pipe,    &kp SV_PIPE,     LM4 LB4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // |
-ZMK_COMBO(combo_EXCL,    &kp SV_EXCL,     LM3 LB3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // !
-ZMK_COMBO(combo_QMARK,   &kp SV_QMARK,    LM2 LB2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // ?
-ZMK_COMBO(combo_EQUAL,   &kp SV_EQUAL,    LM1 LB1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // =
-ZMK_COMBO(combo_PLUS,    &kp SV_PLUS,     LM0 LB0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // +
+ZMK_COMBO(combo_pipe,    &kp SV_PIPE,     LM4 LB4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // |
+ZMK_COMBO(combo_EXCL,    &kp SV_EXCL,     LM3 LB3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // !
+ZMK_COMBO(combo_QMARK,   &kp SV_QMARK,    LM2 LB2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // ?
+ZMK_COMBO(combo_EQUAL,   &kp SV_EQUAL,    LM1 LB1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // =
+ZMK_COMBO(combo_PLUS,    &kp SV_PLUS,     LM0 LB0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // +
 
 //ZMK_COMBO(combo_TILDE,   &macro_tilde,    RM0 RB0, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Ö
 ZMK_COMBO(combo_oe,      &kp SV_O_UMLAUT, RM1 RB1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_SLOW)  // Ö
@@ -91,7 +93,7 @@ ZMK_COMBO(combo_BT_CLR,  &bt BT_CLR,      LT2 LT1, FN, COMBO_TERM_FAST, COMBO_ID
 #define QUICK_TAP_MS 175
 
 &sk {  // sticky-key config
-  release-after-ms = <900>;  // release after 0.6s
+  release-after-ms = <900>;  // release after 0.9s
   quick-release;             // no double capitalization when rolling keys
 };
 
@@ -147,6 +149,8 @@ ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
 #define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
 #define NAV_BSPC  &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
 #define NAV_DEL   &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
+#define SPACE_TAB &mt TAB SPACE        // tap: del   | long-tap: delete word forward
+
 
 // mask CTRL when holding left/right to avoid accidental jumps to beginning/end of document
 #define MASK_MODS(NAME, MODS, BINDING) \
@@ -231,9 +235,9 @@ ZMK_LAYER(colemak,
 //              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
                   &hml LSHFT A  &hml LCTRL R  &hml LALT S   &hml LGUI T      &kp G             &kp M      &hmr RGUI N    &hmr RALT E  &hmr RCTRL I  &hmr RSHFT O
 //╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮ 
-      &kp ESC       &kp Z         &kp X         &kp C         &kp D          &kp V             &kp K         &kp H     &kp SV_COMMA    &kp SV_DOT   &kp SV_MINUS    &kp RET
+      &kp ESC       &kp Z         &kp X         &kp C         &kp D          &kp V             &kp K         &kp H     &kp SV_COMMA    &kp SV_DOT   &kp SV_MINUS   &lt FN RET
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
-                                               &sl SYMNUM     &sl NAV     &smart_shft        &kp SPACE     NAV_BSPC       &kp TAB
+                                               &sl SYMNUM     &sl NAV     &smart_shft        SPACE_TAB     NAV_BSPC       NAV_DEL
 //                                          ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
 )
 
@@ -245,7 +249,7 @@ ZMK_LAYER(sym,
 //╭──────────────────┴──────────────────┼────────────────────┼─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮ 
        &kp ESC             &none               &none               &none           &macro_tilde          &none            &none         &kp N1        &kp N2        &kp N3        &none         &kp RET
 //╰──────────────────┴──────────────────┴────────────────────┴─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
-                                                                   &none             &mo NAV             &none            &kp SPACE     NAV_BSPC      &kp TAB
+                                                                   CANCEL             &mo NAV             &none          SPACE_TAB      NAV_BSPC      NAV_DEL
 //                                                           ╰─────────────────┴────────────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
 )
 
@@ -257,7 +261,7 @@ ZMK_LAYER(nav,
 //╭─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮ 
       &kp ESC      &kp M_UNDO    &kp M_CUT    &kp M_COPY       &none      &kp M_PASTE          &none         &none         &none         &none         &none        &kp RET
 //╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                               &mo SYMNUM      &none         &none           &kp SPACE      NAV_BSPC      &kp TAB 
+                                               &mo SYMNUM      CANCEL        &none           SPACE_TAB      NAV_BSPC     NAV_DEL  
 //                                          ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
 )
 
@@ -269,6 +273,6 @@ ZMK_LAYER(fn,
 //╭────────────────────┼────────────────────┼──────────────────┼───────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼──────────────┼───────────────┼───────────────╮ 
            &kp ESC            &kp BRI_DN         &kp BRI_UP         &kp C_PREV          &kp C_NEXT        &none             &none        &kp F1        &kp F2        &kp F3         &kp F12          &kp RET
 //╰────────────────────┴────────────────────┴──────────────────┴───────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼──────────────┴───────────────┴───────────────╯
-                                                                      &none               &none           &none           &kp SPACE      NAV_BSPC      &kp TAB
+                                                                      &none               &none           &none           SPACE_TAB      NAV_BSPC      NAV_DEL
 //                                                             ╰───────────────────┴─────────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
 )
