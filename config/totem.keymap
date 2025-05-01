@@ -45,10 +45,10 @@
 #define CANCEL  &kp K_CANCEL  // Cancel caps-word & auto-layers.
 
 /* Combos */
-#define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 50
+#define COMBO_TERM_FAST 20
+#define COMBO_TERM_SLOW 70
 
-#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_FAST 200
 #define COMBO_IDLE_SLOW 50
 
 // make homerow combos tap-only (so HRMs can be chorded instantaneously)
@@ -235,7 +235,7 @@ ZMK_LAYER(colemak,
 //              ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
                   &hml LSHFT A  &hml LCTRL R  &hml LALT S   &hml LGUI T      &kp G             &kp M      &hmr RGUI N    &hmr RALT E  &hmr RCTRL I  &hmr RSHFT O
 //╭─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮ 
-      &kp ESC       &kp Z         &kp X         &kp C         &kp D          &kp V             &kp K         &kp H     &kp SV_COMMA    &kp SV_DOT   &kp SV_MINUS   &lt FN RET
+      &kp ESC       &kp Z         &kp X         &kp C         &kp D          &kp V             &kp K         &kp H     &kp SV_COMMA    &kp SV_DOT   &kp SV_MINUS   &kp RET
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
                                                &sl SYMNUM     &sl NAV     &smart_shft        SPACE_TAB     NAV_BSPC       NAV_DEL
 //                                          ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
