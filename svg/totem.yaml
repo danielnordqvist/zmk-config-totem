@@ -32,7 +32,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - '-'
-  - {t: '$$mdi:keyboard-return$$', h: fn}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: sym, h: '[sticky]'}
   - {t: nav, h: '[sticky]'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '[sticky]', s: '$$mdi:alpha-w-box$$'}
@@ -44,7 +44,7 @@ layers:
   - '`'
   - '&'
   - '%'
-  - ../
+  - $
   - ''
   - '7'
   - '8'
@@ -52,8 +52,8 @@ layers:
   - ''
   - {t: '@', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: $, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '#', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: +, h: '$$mdi:apple-keyboard-command$$'}
   - ~/
   - ''
   - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
@@ -61,11 +61,11 @@ layers:
   - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - '0'
   - $$mdi:keyboard-esc$$
-  - ''
-  - ''
-  - ''
   - '~'
-  - ''
+  - '#'
+  - '?'
+  - '!'
+  - '|'
   - ''
   - '1'
   - '2'
@@ -149,9 +149,9 @@ layers:
   - F2
   - F3
   - F12
-  - {t: '$$mdi:keyboard-return$$', type: held}
-  - ''
-  - ''
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {type: held}
+  - {type: held}
   - ''
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
   - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
@@ -186,21 +186,6 @@ combos:
   l: [colemak]
 - p: [9, 19]
   k: \
-  l: [colemak]
-- p: [10, 21]
-  k: '|'
-  l: [colemak]
-- p: [11, 22]
-  k: '!'
-  l: [colemak]
-- p: [12, 23]
-  k: '?'
-  l: [colemak]
-- p: [13, 24]
-  k: '='
-  l: [colemak]
-- p: [14, 25]
-  k: +
   l: [colemak]
 - p: [16, 27]
   k: Ö
