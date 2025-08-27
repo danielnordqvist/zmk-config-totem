@@ -41,10 +41,10 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
   sym:
   - ^
-  - '`'
-  - '&'
-  - '%'
+  - '#'
   - $
+  - '%'
+  - '&'
   - ''
   - '7'
   - '8'
@@ -62,7 +62,7 @@ layers:
   - '0'
   - $$mdi:keyboard-esc$$
   - '~'
-  - '#'
+  - '`'
   - '?'
   - '!'
   - '|'
