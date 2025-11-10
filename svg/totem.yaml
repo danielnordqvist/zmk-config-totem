@@ -33,12 +33,12 @@ layers:
   - {t: ., s: ':'}
   - '-'
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: sym, h: '[sticky]'}
-  - {t: nav, h: '[sticky]'}
+  - sym
+  - nav
   - {t: '$$mdi:apple-keyboard-shift$$', h: '[sticky]', s: '$$mdi:alpha-w-box$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', h: nav}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: sym}
   sym:
   - ^
   - '#'
@@ -59,7 +59,7 @@ layers:
   - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
-  - '0'
+  - {t: '0', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:keyboard-esc$$
   - '~'
   - '`'
@@ -71,13 +71,13 @@ layers:
   - '2'
   - '3'
   - ''
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:close-box$$', type: held}
+  - ''
+  - {type: held}
   - nav
   - ''
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
+  - $$mdi:keyboard-space$$
+  - nav
+  - ''
   nav:
   - ''
   - ''
@@ -105,18 +105,18 @@ layers:
   - $$mdi:content-copy$$
   - ''
   - $$mdi:content-paste$$
+  - $$mdi:keyboard-tab$$
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   - sym
-  - {t: '$$mdi:close-box$$', type: held}
+  - {type: held}
   - ''
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
+  - $$mdi:keyboard-space$$
+  - ''
+  - sym
   fn:
   - {t: '$$mdi:bluetooth-connect$$', h: '0'}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
@@ -149,13 +149,13 @@ layers:
   - F2
   - F3
   - F12
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - ''
   - {type: held}
   - {type: held}
   - ''
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:keyboard-tab$$'}
-  - {t: '$$mdi:backspace$$', h: 'Ctl+$$mdi:backspace$$'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: 'Ctl+$$mdi:backspace-reverse-outline$$'}
+  - $$mdi:keyboard-space$$
+  - ''
+  - ''
 combos:
 - p: [0, 10]
   k: /
