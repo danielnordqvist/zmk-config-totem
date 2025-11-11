@@ -64,7 +64,7 @@
             ╰────────────┴────────────╯                        ╰──────────────┴─────────────╯
 */
 
-ZMK_COMBO(combo_FSLH,    &kp SV_FSLH,     LT4 LM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // /
+//ZMK_COMBO(combo_FSLH,    &kp SV_FSLH,     LT4 LM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // /
 ZMK_COMBO(combo_SV_LT,   &kp SV_LT,       LT3 LM3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // <
 ZMK_COMBO(combo_SV_LBKT, &kp SV_LBKT,     LT2 LM2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // [
 ZMK_COMBO(combo_SV_LPAR, &kp SV_LPAR,     LT1 LM1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // (
@@ -74,7 +74,7 @@ ZMK_COMBO(combo_SV_RBRC, &kp SV_RBRC,     RT0 RM0, COLEMAK, COMBO_TERM_SLOW, COM
 ZMK_COMBO(combo_SV_RPAR, &kp SV_RPAR,     RT1 RM1, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // )
 ZMK_COMBO(combo_SV_RBKT, &kp SV_RBKT,     RT2 RM2, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // ]
 ZMK_COMBO(combo_SV_GT,   &kp SV_GT,       RT3 RM3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // >
-ZMK_COMBO(combo_BSLH,    &kp SV_BSLH,     RT4 RM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // \
+//ZMK_COMBO(combo_BSLH,    &kp SV_BSLH,     RT4 RM4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // \
 
 //ZMK_COMBO(combo_pipe,    &kp SV_PIPE,     LM4 LB4, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // |
 //ZMK_COMBO(combo_EXCL,    &kp SV_EXCL,     LM3 LB3, COLEMAK, COMBO_TERM_SLOW, COMBO_IDLE_FAST)  // !
@@ -242,11 +242,11 @@ ZMK_LAYER(colemak,
 
 ZMK_LAYER(sym,
 //                   ╭──────────────────┬────────────────────┬─────────────────┬────────────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                        &macro_caret         &kp SV_HASH         &kp SV_DLLR        &kp SV_PRCNT      &kp SV_AMPS         &none         &kp N7        &kp N8        &kp N9        &none
+                        &macro_caret         &kp SV_HASH         &kp SV_DLLR        &kp SV_PRCNT      &kp SV_AMPS        &kp SV_STAR    &kp N7        &kp N8        &kp N9        &sqt_quot
 //                   ├──────────────────┼────────────────────┼─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-                       &hml LSHFT SV_AT  &hml LCTRL SV_STAR   &hml LALT SV_EQUAL  &hml LGUI SV_PLUS &macro_dir_home       &none      &hmr RGUI N4  &hmr RALT N5  &hmr RCTRL N6  &hmr RSHFT N0
+                       &hml LSHFT SV_AT  &hml LCTRL SV_STAR   &hml LALT SV_QMARK  &hml LGUI SV_EXCL &macro_dir_home      &kp SV_PLUS  &hmr RGUI N4  &hmr RALT N5  &hmr RCTRL N6  &hmr RSHFT N0
 //╭──────────────────┴──────────────────┼────────────────────┼─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╮ 
-       &kp ESC          &macro_tilde        &macro_grave          &kp SV_QMARK      &kp SV_EXCL       &kp SV_PIPE         &none         &kp N1        &kp N2        &kp N3        &none         &none
+       &kp ESC          &macro_tilde        &macro_grave          &kp SV_FSLH       &kp SV_BSLH       &kp SV_PIPE       &kp SV_EQUAL    &kp N1        &kp N2        &kp N3      &kp SV_MINUS     &none
 //╰──────────────────┴──────────────────┴────────────────────┴─────────────────┼────────────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────┴─────────────╯
                                                                    &none              &mo NAV             &none          &kp SPACE    &lt NAV BSPC    &kp DEL 
 //                                                           ╰─────────────────┴────────────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯  
