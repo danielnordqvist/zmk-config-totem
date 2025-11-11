@@ -45,17 +45,17 @@ layers:
   - $
   - '%'
   - '&'
-  - ''
+  - '*'
   - '7'
   - '8'
   - '9'
-  - ''
+  - {t: '''', s: '"'}
   - {t: '@', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '=', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: +, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '?', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '!', h: '$$mdi:apple-keyboard-command$$'}
   - ~/
-  - ''
+  - +
   - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
@@ -63,14 +63,14 @@ layers:
   - $$mdi:keyboard-esc$$
   - '~'
   - '`'
-  - '?'
-  - '!'
+  - /
+  - \
   - '|'
-  - ''
+  - '='
   - '1'
   - '2'
   - '3'
-  - ''
+  - '-'
   - ''
   - {type: held}
   - nav
@@ -157,9 +157,6 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
 combos:
-- p: [0, 10]
-  k: /
-  l: [colemak]
 - p: [1, 11]
   k: <
   l: [colemak]
@@ -183,9 +180,6 @@ combos:
   l: [colemak]
 - p: [8, 18]
   k: '>'
-  l: [colemak]
-- p: [9, 19]
-  k: \
   l: [colemak]
 - p: [16, 27]
   k: Ö
