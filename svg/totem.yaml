@@ -76,8 +76,8 @@ layers:
   - nav
   - ''
   - $$mdi:keyboard-space$$
-  - nav
-  - ''
+  - {t: '$$mdi:backspace$$', h: nav}
+  - $$mdi:backspace-reverse-outline$$
   nav:
   - ''
   - ''
@@ -115,8 +115,8 @@ layers:
   - {type: held}
   - ''
   - $$mdi:keyboard-space$$
-  - ''
-  - sym
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: sym}
   fn:
   - {t: '$$mdi:bluetooth-connect$$', h: '0'}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
@@ -154,8 +154,8 @@ layers:
   - {type: held}
   - ''
   - $$mdi:keyboard-space$$
-  - ''
-  - ''
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
 combos:
 - p: [0, 10]
   k: /
